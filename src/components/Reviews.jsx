@@ -19,7 +19,7 @@ function Reviews({nav}) {
           </div>
 
           <Link
-            to="contact"
+            to="googleReview"
             smooth
             duration={500}
             className="text-xs group text-white px-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
