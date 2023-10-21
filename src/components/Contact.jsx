@@ -37,7 +37,7 @@ function Contact() {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white overflow-scroll md:overflow-hidden"
+      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white overflow-scroll md:overflow-hidden"
     >
       <div className="py-24 px-5 md:py-24 md:px-32">
         <p className="text-4xl font-bold inline border-b-4 border-gray-500">
