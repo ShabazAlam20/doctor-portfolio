@@ -3,8 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import "./Home.css";
 
-function Navbar() {
-  const [nav, setNav] = useState("");
+function Navbar({ nav, setNav }) {
   const links = [
     {
       id: 1,
@@ -24,11 +23,11 @@ function Navbar() {
     },
     {
       id: 5,
-      link: "contact",
+      link: "reviews",
     },
     {
       id: 6,
-      link: "reviews",
+      link: "contact",
     },
   ];
 

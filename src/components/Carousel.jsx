@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 function Carousel({ children: slides }) {
-  console.log(slides.length);
   const [curr, setCurr] = useState(0);
 
   const prev = () => {

@@ -4,13 +4,14 @@ import { AiFillStar } from "react-icons/ai";
 import GoogleReviewcard from "./GoogleReviewCard";
 import Carousel from "./Carousel";
 
-function Reviews() {
+function Reviews({nav}) {
+    console.log(nav);
   return (
     <div
       name="reviews"
       className="w-full min-h-screen bg-gradient-to-b from-black to-gray-800 text-white"
     >
-      <div className="md:mt-24 flex flex-col gap-5 md:px-32 px-5 mt-24">
+      <div className={`md:mt-24 flex flex-col gap-5 md:px-32 px-5 mt-24 ${nav ? "hidden": "block"}`}>
         <div className=" h-20 rounded-md shadow-md bg-zinc-100 w-full flex justify-between p-5">
           <div className="flex flex-col">
             <p className="text-cyan-500">Google Rating</p>
@@ -28,7 +29,7 @@ function Reviews() {
         </div>
 
         <div className="hidden md:block">
-          <Carousel>
+          <Carousel nav={nav}>
             <div className="min-w-full grid grid-cols-2 md:grid-cols-3 h-full w-full gap-5 py-5 px-16">
               <GoogleReviewcard
                 name={"Annay Lopes"}
