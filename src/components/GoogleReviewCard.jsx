@@ -23,7 +23,7 @@ function GoogleReviewcard({ name, date, rating, review }) {
         <AiFillStar className="text-orange-400" />
       </div>
       <div className="h-40 overflow-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
-        <p className="text-black text-[8px] font-light">{review}</p>
+        <p className="text-black text-[10px] font-light">{review}</p>
       </div>
     </div>
   );

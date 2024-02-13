@@ -81,9 +81,12 @@ function Contact() {
               Book Apointment
             </button>
             {status && (
-              <p className="text-xl text-white self-center">
-                We have received your request and will shortly contact with you to confirm the appointment.
-              </p>
+              <div className="text-center">
+                <p className="text-xl text-white self-center">
+                  We have received your request and will shortly contact with
+                  you to confirm the appointment.
+                </p>
+              </div>
             )}
           </form>
         </div>
