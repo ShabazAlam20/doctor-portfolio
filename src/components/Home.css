@@ -25,3 +25,31 @@
     background-position: 200% center;
   }
 }
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-container::before {
+  content: '\00a0';
+}
+
+.scrolling {
+  animation: marquee 20s linear infinite;
+  display: block;
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(20%);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+}

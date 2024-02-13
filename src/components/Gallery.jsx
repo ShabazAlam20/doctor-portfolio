@@ -4,7 +4,7 @@ import IMG2 from "../assets/img2.jpeg";
 import IMG3 from "../assets/img3.jpeg";
 import IMG4 from "../assets/img4.jpg";
 
-function Portfolio() {
+function Gallery() {
   const portfolios = [
     {
       id: 1,
@@ -25,12 +25,12 @@ function Portfolio() {
   ];
   return (
     <div
-      name="services"
+      name="gallery"
       className="w-full min-h-screen bg-gradient-to-b from-black to-gray-800 text-white"
     >
       <div className="py-24 px-5 md:py-24 md:px-32">
         <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-          Services
+          Gallery
         </p>
         <p className="py-6">Check out some of my work right here</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 md:px-0">
@@ -53,4 +53,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Gallery;

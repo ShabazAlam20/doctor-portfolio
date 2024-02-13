@@ -4,28 +4,38 @@ import { AiFillStar } from "react-icons/ai";
 import GoogleReviewcard from "./GoogleReviewCard";
 import Carousel from "./Carousel";
 
-function Reviews({nav}) {
-    console.log(nav);
+function Reviews({ nav }) {
+  console.log(nav);
   return (
     <div
       name="reviews"
       className="w-full min-h-screen bg-gradient-to-b from-black to-gray-800 text-white"
     >
-      <div className={`md:mt-24 flex flex-col gap-5 md:px-32 px-5 mt-24 ${nav ? "hidden": "block"}`}>
+      <div
+        className={`md:mt-24 flex flex-col gap-5 md:px-32 px-5 mt-24 ${
+          nav ? "hidden" : "block"
+        }`}
+      >
         <div className=" h-20 rounded-md shadow-md bg-zinc-100 w-full flex justify-between p-5">
           <div className="flex flex-col">
             <p className="text-cyan-500">Google Rating</p>
-            <p className="text-black text-[10px] ml-1">12 Ratings</p>
+            <div className="w-full flex">
+              <AiFillStar className="text-orange-400" />
+              <AiFillStar className="text-orange-400" />
+              <AiFillStar className="text-orange-400" />
+              <AiFillStar className="text-orange-400" />
+              <AiFillStar className="text-orange-400" />
+              <p className="text-black text-[10px] ml-1">12 Ratings</p>
+            </div>
           </div>
-
-          <Link
-            to="googleReview"
-            smooth
-            duration={500}
+          <a
+            href="https://www.google.com/search?q=sabari+dey&oq=sabari+dey&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyDQgEEAAYhgMYgAQYigUyDQgFEAAYhgMYgAQYigXSAQgxOTI3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#"
+            target="_blank"
             className="text-xs group text-white px-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            rel="noreferrer"
           >
-            Write Review
-          </Link>
+            Write Reveiw
+          </a>
         </div>
 
         <div className="hidden md:block">

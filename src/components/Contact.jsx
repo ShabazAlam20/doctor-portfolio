@@ -43,7 +43,7 @@ function Contact() {
         <p className="text-4xl font-bold inline border-b-4 border-gray-500">
           Contact
         </p>
-        <p className="py-6">Submit the form below to get in touch with me</p>
+        <p className="py-6">Please fill the details to book an appointment.</p>
         <div className="flex justify-center items-center px-10 md:px-0">
           <form
             ref={form}
@@ -60,13 +60,19 @@ function Contact() {
               type="text"
               name="from_email"
               placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="mt-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+            />
+            <input
+              type="text"
+              name="from_mobile"
+              placeholder="Enter your mobile"
+              className="mt-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <textarea
               name="message"
               placeholder="Enter your message"
               rows="10"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="mt-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             />
             <button
               className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto
@@ -76,7 +82,7 @@ function Contact() {
             </button>
             {status && (
               <p className="text-xl text-white self-center">
-                Message has been sent
+                We have received your request and will shortly contact with you to confirm the appointment.
               </p>
             )}
           </form>

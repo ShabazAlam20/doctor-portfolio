@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
@@ -13,17 +13,17 @@ function SocialLinks() {
                     Linkedin < FaLinkedin size={30} />
                 </>
             ),
-            href: 'https://linkedin.com',
+            href: 'https://ae.linkedin.com/in/dr-sabari-dey',
             style: 'rounded-tr-md'
         },
         {
             id: 2,
             child: (
                 <>
-                    GitHub < FaGithub size={30} />
+                    Instagram < FaInstagram size={30} />
                 </>
             ),
-            href: 'https://github.com'
+            href: 'https://www.instagram.com/drsabaridey_obgyn/'
         },
         {
             id: 3,
@@ -35,17 +35,6 @@ function SocialLinks() {
             href: 'mailto:foo@gmail.com',
             style: 'rounded-tr-md'
         },
-        {
-            id: 4,
-            child: (
-                <>
-                    Resume < BsFillPersonLinesFill size={30} />
-                </>
-            ),
-            href: '/resume.pdf',
-            style: 'rounded-br-md',
-            download: true
-        }
     ]
     return (
         <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>

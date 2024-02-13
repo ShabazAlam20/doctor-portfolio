@@ -19,7 +19,7 @@ function Navbar({ nav, setNav }) {
     },
     {
       id: 4,
-      link: "experience",
+      link: "gallery",
     },
     {
       id: 5,
@@ -40,6 +40,7 @@ function Navbar({ nav, setNav }) {
         <h1 className="text-3xl ml-2 font-signature animate-charcter">
           Dr. Sabari Dey
         </h1>
+        <h1 className="text-[10px] ml-2">MBBS, DGO, DNB, FMAS, FCG</h1>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (

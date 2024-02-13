@@ -18,9 +18,24 @@ function Home() {
         />
 
         <div className="flex flex-col justify-center h-full md:w-3/4 md:ml-40">
-          <h2 className="text-3xl font-bold text-white animate-charcter">
-            ObGyn - Laparoscopic Surgeon
-          </h2>
+          {/* <h2 className="text-3xl font-bold text-white animate-charcter marqueeStyle w-full">
+            Obstetrics and Gynaecology Laparoscopic surgeon  Cosmetic Gynaecology
+          </h2> */}
+          {/* <div className="w-36">
+            <div className="relative overflow-hidden h-10">
+              <p className="marquee-text text-3xl font-bold text-white absolute animate-charcter">
+                Obstetrics and Gynaecology Laparoscopic Surgeon Cosmetic
+                Gynaecology
+              </p>
+            </div>
+          </div> */}
+          <div className="marquee-container h-10">
+            <div className="scrolling text-3xl font-bold animate-charcter text-white">
+              Obstetrics and Gynaecology Laparoscopic Surgeon Cosmetic
+              Gynaecology
+            </div>
+          </div>
+
           <p className="text-gray-500 py-4">
             Dr. Sabari Dey is a highly accomplished and experienced
             Obstetrician, Aesthetic Gynaecologist, and Laparoscopic Surgeon with
