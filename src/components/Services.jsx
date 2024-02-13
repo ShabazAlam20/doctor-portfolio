@@ -43,7 +43,7 @@ function Services() {
   return (
     <div
       name="services"
-      className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full min-h-screen bg-gradient-to-b from-black via-black to-gray-800 text-white"
     >
       <div className="py-24 px-5 md:py-24 md:px-32">
         <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">

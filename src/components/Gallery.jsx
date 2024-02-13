@@ -26,7 +26,7 @@ function Gallery() {
   return (
     <div
       name="gallery"
-      className="w-full min-h-screen bg-gradient-to-b from-black to-gray-800 text-white"
+      className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className="py-24 px-5 md:py-24 md:px-32">
         <p className="text-4xl font-bold inline border-b-4 border-gray-500">
