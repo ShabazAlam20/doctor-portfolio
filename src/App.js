@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <div className="flex flex-col">
         <Navbar nav={nav} setNav={setNav} />
-        <Home />
+        <Home nav={nav} setNav={setNav}/>
         <About />
         <Services />
         <Gallery />

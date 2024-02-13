@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import "./Home.css";
 
-function Home() {
+function Home({ nav, setNav }) {
   return (
     <div
       name="home"
@@ -29,12 +29,14 @@ function Home() {
               </p>
             </div>
           </div> */}
-          <div className="marquee-container h-10">
-            <div className="scrolling text-3xl font-bold animate-charcter text-white">
-              Obstetrics and Gynaecology Laparoscopic Surgeon Cosmetic
-              Gynaecology
+          {!nav && (
+            <div className="marquee-container h-10">
+              <div className="scrolling text-3xl font-bold animate-charcter text-white">
+                Obstetrics and Gynaecology Laparoscopic Surgeon Cosmetic
+                Gynaecology
+              </div>
             </div>
-          </div>
+          )}
 
           <p className="text-gray-500 py-4">
             Dr. Sabari Dey is a highly accomplished and experienced
