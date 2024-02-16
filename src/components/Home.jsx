@@ -1,7 +1,7 @@
 import React from "react";
-import HeroPic from "../assets/DoctorPic2.jpeg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import HeroPic from "../assets/DoctorPic2.jpeg";
 import "./Home.css";
 
 function Home({ nav, setNav }) {
@@ -31,14 +31,15 @@ function Home({ nav, setNav }) {
           </div> */}
           {!nav && (
             <div className="marquee-container h-10">
-              <div className="scrolling text-3xl font-bold animate-charcter text-white">
-                Obstetrics and Gynaecology Laparoscopic Surgeon Cosmetic
-                Gynaecology
+              <div className="scrolling text-3xl font-bold animate-charcter text-white flex gap-32">
+                <p>Obstetrics and Gynaecology</p>
+                <p>Laparoscopic Surgeon</p>
+                <p>Cosmetic Gynaecology</p>
               </div>
             </div>
           )}
 
-          <p className="text-gray-500 py-4">
+          <p className="text-gray-300 py-4">
             Dr. Sabari Dey is a highly accomplished and experienced
             Obstetrician, Aesthetic Gynaecologist, and Laparoscopic Surgeon with
             more than 15 years of experience in her field. After completing her
