@@ -1,4 +1,6 @@
 import React from "react";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 const About = () => {
   return (
@@ -41,6 +43,32 @@ const About = () => {
             personalised and compassionate care to her patients, ensuring their
             overall well-being and health.
           </p>
+        </div>
+        <div className="pt-10 flex flex-col gap-3 lg:hidder md:hidden">
+          <p className="font-bold">Links</p>
+          <div className="flex justify-center gap-5 w-full items-center">
+            <a
+              href="https://ae.linkedin.com/in/dr-sabari-dey"              
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin size={30}/>
+            </a>
+            <a
+              href="https://www.instagram.com/drsabaridey_obgyn/'"             
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram size={30}/>
+            </a>
+            <a
+              href="mailto:sabarinandi83@gmail.com"            
+              target="_blank"
+              rel="noreferrer"
+            >
+              <HiOutlineMail size={30}/>
+            </a>
+          </div>
         </div>
       </div>
     </div>
